@@ -1,0 +1,480 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;800;900&display=swap');
+
+body {
+    font-family: "Roboto", sans-serif;
+    line-height: 1.8;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 900 !important;
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.4s ease;
+    font-weight: 800;
+    color: #20212c;
+}
+
+.navbar {
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+
+}
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show>.nav-link {
+    background: -webkit-linear-gradient(#00e0fe, #ff0000);
+
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -ms-background-clip: text;
+    background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+
+}
+
+/* Hero Section */
+
+section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    z-index: 2;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(254, 7, 7, 0.7), rgba(0, 224, 254, 0.7));
+    z-index: -1;
+}
+
+.bg-cover {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.hero-section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    padding: 14px 22px;
+    transition: all 0.3s ease;
+}
+
+.btn-main {
+    background: linear-gradient(to right, #00e0fe, #ff0000);
+    border-radius: 100px;
+    border: none;
+    font-weight: 600;
+    color: #fff;
+}
+
+
+.btn:hover {
+    color: #fff;
+    transform: translateY(-5px);
+}
+
+
+/* Services Section Starts */
+
+.section-intro {
+    margin-bottom: 40px;
+}
+
+.section-intro .divider {
+    height: 4px;
+    width: 70px;
+    background: linear-gradient(to right, #00e0fe, #ff0000);
+    margin: 16px auto;
+}
+
+img {
+    width: 100%;
+}
+
+.service .service-img .icon {
+    width: 90px;
+    height: 90px;
+    background: linear-gradient(to right, #00e0fe, #ff0000);
+    color: #fff;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service .service-img .icon i {
+    font-size: 36px;
+}
+
+.service .service-img {
+    position: relative;
+}
+
+.service .service-img .icon {
+    position: absolute;
+    margin-top: -45px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+/* About Section */
+
+.video-btn {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(to right, #00e0fe, #ff0000);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border-radius: 100px;
+}
+
+.video-btn i {
+    font-size: 32px;
+}
+
+
+/* Feature Section */
+
+.feature i {
+    background: -webkit-linear-gradient(#00e0fe, #ff0000);
+
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -ms-background-clip: text;
+    background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+
+    font-size: 54px;
+
+}
+
+/* review Section */
+
+
+.review .stars {
+    color: orange;
+}
+
+/* review Section */
+.review .person {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+    padding-bottom: 18px;
+}
+
+.review .person img {
+    width: 75px;
+    height: 75px;
+    border-radius: 100px;
+}
+
+.review {
+    box-shadow: 0 12px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Menambahkan Flexbox ke struktur organisasi */
+#reviews .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    /* Memberikan jarak antar kolom */
+}
+
+/* Menentukan ukuran kolom dan tata letaknya */
+#reviews .col-md-2 {
+    flex: 1 0 21%;
+    /* Menentukan lebar kolom */
+    margin: 10px;
+    /* Menambahkan jarak antar kolom */
+    text-align: center;
+}
+
+/* Review styling */
+#reviews .review {
+    background: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect untuk review */
+#reviews .review:hover {
+    transform: scale(1.05);
+}
+
+/* Styling untuk gambar di dalam setiap person */
+#reviews .person img {
+    max-width: 100%;
+    border-radius: 50%;
+    /* Membuat gambar menjadi bulat */
+    margin-bottom: 15px;
+}
+
+/* Styling untuk nama dan jabatan */
+#reviews .text h6 {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+#reviews .text small {
+    color: #777;
+}
+
+
+
+/* Form Section */
+
+form .form-control {
+    border-radius: 0;
+    background: transparent;
+    color: #fff;
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+form .form-control::placeholder {
+    color: #fff;
+}
+
+form input.form-control {
+    height: 54px;
+}
+
+form .form-control:focus {
+    color: #fff;
+    background: transparent;
+    border-color: #fff;
+}
+
+
+/* galeri */
+/* Styling untuk tombol filter */
+.shuffle-btn-group label {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    font-weight: 600;
+    background: linear-gradient(to right, #00e0fe, #ff0000);
+    color: #fff;
+}
+
+.shuffle-btn-group label:hover,
+.shuffle-btn-group label.active {
+    background: #fff;
+    color: #20212c;
+    border-color: #00e0fe;
+}
+
+.shuffle-btn-group input {
+    display: none;
+}
+
+/* Styling untuk container galeri */
+.project-img-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.project-img-container img {
+    width: 100%;
+    height: 250px;
+    /* Atur tinggi gambar sesuai keinginan */
+    object-fit: cover;
+    /* Memastikan gambar memenuhi container dengan tetap menjaga aspek rasio */
+    border-radius: 10px;
+    transition: transform 0.4s ease;
+}
+
+.project-img-container:hover img {
+    transform: scale(1.1);
+}
+
+/* Styling untuk teks di atas gambar */
+.project-item-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    /* Transparansi hitam */
+    color: #fff;
+    text-align: center;
+    transition: all 0.3s ease;
+    opacity: 0;
+}
+
+.project-img-container:hover .project-item-info {
+    opacity: 1;
+}
+
+/* Judul galeri */
+.project-item-info h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 0;
+    color: #fff;
+}
+
+.project-item-info h3 a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.project-item-info h3 a:hover {
+    color: #00e0fe;
+}
+
+/* Kategori galeri */
+.project-item-info p {
+    margin: 5px 0 0;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #ffd700;
+    /* Warna kuning untuk kategori */
+}
+
+
+/* Responsive grid untuk galeri */
+.shuffle-item {
+    transition: all 0.4s ease;
+    opacity: 1;
+    transform: scale(1);
+}
+
+.shuffle-item.hidden {
+    opacity: 0;
+    transform: scale(0.8);
+    pointer-events: none;
+}
+
+#quote {
+    background: linear-gradient(to right, #00e0fe, #ff0000);
+    color: #fff;
+}
+
+#quote blockquote {
+    font-style: italic;
+    padding: 20px;
+    border-left: 5px solid #ffd700;
+}
+
+#quote blockquote p {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+#quote blockquote footer {
+    font-size: 1rem;
+    margin-top: 10px;
+    color: #ffd700;
+}
+
+#quote blockquote footer cite {
+    font-style: normal;
+    color: #fff;
+}
+
+/* Contact Section */
+#contact .row {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    /* Memberikan jarak antara ikon */
+    align-items: center;
+    margin-top: 30px;
+    
+}
+
+/* Styling untuk ikon di section contact */
+.contact-icon {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #00e0fe, #ff0000);
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.contact-icon:hover {
+    transform: scale(1.1);
+    /* Efek membesar saat hover */
+    background-color: rgba(255, 255, 255, 0.3);
+    /* Efek hover dengan perubahan latar belakang */
+}
+
+.contact-icon i {
+    font-size: 50px;
+    /* Membesarkan ukuran ikon */
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.contact-icon h5 {
+    font-size: 16px;
+    color: #fff;
+    margin-top: 10px;
+}
+
+#contact {
+    padding: 50px 0;
+    background-size: cover;
+    background-position: center;
+    background: center-gradient(to right, #00e0fe, #ff0000);
+    position: relative;
+}
+
+#contact .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    /* Menambahkan overlay gelap agar teks lebih terlihat */
+}
+
+
+/* Footer */
+
+footer {
+    background: linear-gradient(to right, #00e0fe, #ff0000);
+    color: #fff;
+}
+
+footer a {
+    color: #fff;
+}
